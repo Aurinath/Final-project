@@ -1,0 +1,24 @@
+{
+  "name": "zaverecny-projekt",
+  "version": "1.0.0",
+  "description": "Zaverecny projekt Nikola Dolezalova",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aurinath/Zaverecny-projekt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aurinath/Zaverecny-projekt/issues"
+  },
+  "homepage": "https://github.com/Aurinath/Zaverecny-projekt#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
+}
