@@ -2,33 +2,45 @@ html {
   box-sizing: border-box;
 }
 
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: inherit;
 }
 
 body {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 17px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 18px;
   line-height: 1.5;
   margin-left: 20%;
   margin-right: 20%;
-  color:rgb(46, 27, 15)
+  color: rgb(7, 7, 7);
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color:rgb(46, 27, 15);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(54, 33, 20);
 }
 
 .header {
-  background-color: rgba(228, 147, 115, 0.486);
+  background-color: rgb(61, 12, 12);
   padding: 30px;
   border-radius: 10px 10px 0 0;
 }
 
-.header p{
+.header p {
   text-align: center;
-  color: rgb(46, 27, 15);
+  color: rgba(245, 245, 245, 0.692);
+}
+
+.header h1 {
+  color: whitesmoke;
+  font-size: 52px;
 }
 
 .header__logo {
@@ -39,10 +51,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .menu {
-  background-color: #6b524e9d;
+  background-color: rgba(61, 12, 12, 0.692);
 }
 
-.menu__checkbox{
+.menu__checkbox {
   position: absolute;
   left: -9999px;
 }
@@ -51,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
 }
 
-.menu__checkbox:checked ~ .menu__list{
+.menu__checkbox:checked ~ .menu__list {
   display: block;
 }
 .menu__list {
@@ -66,6 +78,11 @@ h1, h2, h3, h4, h5, h6 {
   border-right: 1px solid white;
 }
 
+.menu__item_highlited {
+  background-color: rgb(61, 12, 12);
+  border-right: 1px solid white;
+}
+
 .menu__link {
   display: block;
   padding: 15px 30px;
@@ -74,148 +91,246 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
-.menu__link:hover, .menu__link:focus {
-  background-color: white;
-  color: rgba(228, 147, 115, 0.795);
+.menu__link:hover,
+.menu__link:focus {
+  background-color: whitesmoke;
+  color: rgb(77, 15, 15);
 }
 
 .main {
   margin-top: 0;
   margin-bottom: 0;
   padding: 30px;
-  background-color:rgb(243, 230, 217);
+  background-color: rgba(61, 12, 12, 0.377);
   overflow: auto;
 }
 
-.portfolio,.inquiry{
-  border-radius:20px;
-  background-color: #6b524e9d;
+.portfolio,
+.inquiry {
+  border-radius: 20px;
+  background-color: rgba(61, 12, 12, 0.774);
   padding: 10px;
   margin: 10% 15%;
-  text-align:center;
+  text-align: center;
   font-size: 14px;
-  color:white;
+  color: white;
   font-weight: 600;
 }
 
-.buttons{
+.buttons {
   margin-top: 20px;
 }
 
 .obdelnik1 img {
   max-width: 80%;
-  border: 2px solid rgba(46, 27, 15, 0.644);
-  position:relative;
-  margin:5%;
+  border: 2px solid rgba(61, 12, 12, 0.658);
+  border-radius: 10px;
+  position: relative;
+  margin: 5%;
 }
 
-.obdelnik1 li{
+.obdelnik1 li {
   list-style: none;
   margin-top: 30px;
   line-height: 0.9;
   text-align: center;
 }
 
-.obdelnik2{
-  text-align:center;
+.obdelnik2 {
+  text-align: center;
   margin-top: 60px;
   float: right;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgba(61, 12, 12, 0.658);
+  border-radius: 10px;
 }
 
-.omne img{
+.obdelnik2 img {
+  border-radius: 10px;
+}
+
+.obdelnik3 img {
+  max-width: 80%;
+  border-radius: 10px;
+}
+
+.obdelnik3 {
+  text-align: center;
+}
+
+.varianta1,
+.varianta2,
+.varianta3 {
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+.varianta1 img,
+.varianta2 img,
+.varianta3 img {
+  border: 2px solid rgba(61, 12, 12, 0.658);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.coop {
+  text-align: center;
+  margin-bottom: 90px;
+  border: 2px solid rgba(61, 12, 12, 0.658);
+  border-radius: 10px;
+}
+
+.omne img {
   max-width: 60%;
-  border: 2px solid rgba(46, 27, 15, 0.644);
+  border: 2px solid rgba(61, 12, 12, 0.658);
   margin: 5%;
+  border-radius: 10px;
+}
+.var1, .var2, .var3, .var4{
+  border: 2px solid rgba(61, 12, 12, 0.658);
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.rozsah{
+  text-align: right;
+}
+
+.cenik h2{
+  text-align: center;
+}
+.poptavka{
+  border-radius: 20px;
+  background-color: rgba(61, 12, 12, 0.774);
+  padding: 10px;
+  margin: 5% 30%;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  font-weight: 600;
+}
+
+.poptavka a{
+  color: white;
+  text-decoration: none;
+}
+label{
+  display: block;
 }
 
 .footer {
-  background-color:rgba(228, 147, 115, 0.486);
+  background-color: rgb(61, 12, 12);
   padding: 30px;
   text-align: center;
   border-radius: 0 0 10px 10px;
 }
 
+.footer {
+  color: whitesmoke;
+}
 
-@media screen and (min-width:1200px) {
-  .menu-toggler{
-    display:none;
+@media screen and (min-width: 1200px) {
+  .menu-toggler {
+    display: none;
   }
 
-  .body{
-    width:1200px !important;
+  .body {
+    width: 1200px !important;
   }
 
-  .menu__list{
-    display:flex !important;
-  } 
+  .menu__list {
+    display: flex !important;
+  }
 
-  .obdelnik1{
-    text-align:left;
+  .obdelnik1 {
+    text-align: left;
     line-height: 1.1;
   }
 
-
-  .buttons{
-    margin-top:10px;
+  .buttons {
+    margin-top: 10px;
     position: relative;
     display: block;
-    width:300px;
+    width: 300px;
   }
 
-  .obdelnik1 img{
-    max-width:45%;
-    float:left;
+  .obdelnik1 img {
+    max-width: 45%;
+    float: left;
     border-radius: 10px;
     margin-top: 30px;
   }
 
-  .obdelnik2{
-display:flex;
-flex-direction: column;
-  }
-  .omne img{
+  .omne img {
     width: 12%;
     float: right;
     border-radius: 10px;
-    margin-top:30px;
+    margin-top: 30px;
   }
 
-  .omne p{
+  .omne p {
     text-align: center;
     margin-top: 40px;
     margin-left: 10%;
     margin-right: 15px;
   }
 
-  .omne h3{
+  .omne h3 {
     text-align: center;
     margin-bottom: 0px;
   }
 
+  .obdelnik3 {
+    text-align: center;
+    display: flex;
+  }
+
+  .obdelnik3 img {
+    max-width: 50%;
+    border-radius: 10px;
+  }
+
+  .varianta1,
+  .varianta2,
+  .varianta3 {
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .var1, .var2, .var3, .var4{
+    border: none;
+    border-style: groove;
+    padding: 10px;
+    margin: 5px;
+    text-align:start;
+    margin-bottom: 20px;
+  }
+
 }
-  @media screen and (min-width:1300px) {
-    
-  .obdelnik1 img{
-    max-width:35%;
-    float:left;
+@media screen and (min-width: 1300px) {
+  .obdelnik1 img {
+    max-width: 35%;
+    float: left;
     border-radius: 10px;
     margin-left: 10%;
     margin-top: 45px;
   }
 
-  .obdelnik2 img{
-    width:25%;
-    float:right;
+  .obdelnik2 img {
+    width: 25%;
+    float: right;
     border-radius: 10px;
     margin-left: 10%;
     margin-top: 45px;
   }
 
-.web{
-  align-items:center;
-  display:flex;
-  flex-direction:column;
-  flex:1 1 calc(100%/2);
+  .web {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(100% / 2);
   }
-
 }
