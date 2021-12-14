@@ -12,9 +12,11 @@ body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 18px;
   line-height: 1.5;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
   color: rgb(7, 7, 7);
+  box-shadow: 0px 0px 7px black;
+  border-radius: 10px 10px;
 }
 
 h1,
@@ -28,30 +30,36 @@ h6 {
 }
 
 .header {
-  background-color: rgb(61, 12, 12);
+  background-image: url("/images/pozadi.png");
+  background-position: left;
   padding: 30px;
   border-radius: 10px 10px 0 0;
 }
 
 .header p {
+  margin-top: 10px;
   text-align: center;
-  color: rgba(245, 245, 245, 0.692);
+  font-size: 30px;
+  font-weight: 800;
+  color: rgb(17, 17, 17);
 }
 
 .header h1 {
-  color: whitesmoke;
+  color:rgb(17, 17, 17);
   font-size: 52px;
+  margin-top: 80px;
+  font-weight:bolder;
 }
 
 .header__logo {
   margin: 0;
   font-size: 2em;
   text-align: center;
-  color: rgb(46, 27, 15);
+  color: #FFEE00;
 }
 
 .menu {
-  background-color: rgba(61, 12, 12, 0.692);
+  background-color: #B62B6C;
 }
 
 .menu__checkbox {
@@ -72,43 +80,48 @@ h6 {
   display: none;
   justify-content: center;
   list-style: none;
+
 }
 
 .menu__item:not(:last-child) {
-  border-right: 1px solid white;
+  border-right: 1px solid whitesmoke;
+  border-radius: 0 10px 10px 0;
 }
 
 .menu__item_highlited {
-  background-color: rgb(61, 12, 12);
-  border-right: 1px solid white;
+  background-color: #001C70;
+  border-right: 1px solid rgb(7, 0, 0);
+  color: rgb(77, 15, 15);
+  border-radius: 0 10px 10px 0;
 }
 
 .menu__link {
   display: block;
   padding: 15px 30px;
-  color: white;
+  color: whitesmoke;
   text-decoration: none;
   font-weight: bold;
 }
 
 .menu__link:hover,
 .menu__link:focus {
-  background-color: whitesmoke;
-  color: rgb(77, 15, 15);
+  background-color: #001C70;
+  color: whitesmoke;
+  border-radius: 0 10px 10px 0;
 }
 
 .main {
   margin-top: 0;
   margin-bottom: 0;
   padding: 30px;
-  background-color: rgba(61, 12, 12, 0.377);
+  background-color: #ffedf5;
   overflow: auto;
 }
 
 .portfolio,
 .inquiry {
   border-radius: 20px;
-  background-color: rgba(61, 12, 12, 0.774);
+  background-color: #001C70;
   padding: 10px;
   margin: 10% 15%;
   text-align: center;
@@ -123,7 +136,6 @@ h6 {
 
 .obdelnik1 img {
   max-width: 80%;
-  border: 2px solid rgba(61, 12, 12, 0.658);
   border-radius: 10px;
   position: relative;
   margin: 5%;
@@ -142,12 +154,12 @@ h6 {
   float: right;
   display: flex;
   flex-direction: column;
-  border: 2px solid rgba(61, 12, 12, 0.658);
   border-radius: 10px;
 }
 
 .obdelnik2 img {
   border-radius: 10px;
+  margin-top: 0;
 }
 
 .obdelnik3 img {
@@ -169,26 +181,43 @@ h6 {
 .varianta1 img,
 .varianta2 img,
 .varianta3 img {
-  border: 2px solid rgba(61, 12, 12, 0.658);
+  box-shadow: 0px 0px 2px black;
   border-radius: 10px;
   text-align: center;
 }
 
 .coop {
   text-align: center;
-  margin-bottom: 90px;
-  border: 2px solid rgba(61, 12, 12, 0.658);
+  margin-bottom: 30px;
   border-radius: 10px;
+}
+
+.tabulka img{
+  width: 30%;
+  float: right;
+  margin-top: 20px;
+  margin-right: 10px;
+  box-shadow: 0px 0px 2px black;
+  border-radius: 10px;
+}
+
+.formular1{
+  text-align: center;
+}
+
+.omne{
+  text-align: center;
 }
 
 .omne img {
   max-width: 60%;
-  border: 2px solid rgba(61, 12, 12, 0.658);
-  margin: 5%;
+  box-shadow: 0px 0px 2px black;
+  margin-top: 50px;
   border-radius: 10px;
+
 }
 .var1, .var2, .var3, .var4{
-  border: 2px solid rgba(61, 12, 12, 0.658);
+  box-shadow: 0px 0px 2px black;
   padding: 5px;
   margin: 5px;
   text-align: center;
@@ -204,7 +233,7 @@ h6 {
 }
 .poptavka{
   border-radius: 20px;
-  background-color: rgba(61, 12, 12, 0.774);
+  background-color: #001C70;
   padding: 10px;
   margin: 5% 30%;
   text-align: center;
@@ -217,12 +246,51 @@ h6 {
   color: white;
   text-decoration: none;
 }
+
+
 label{
   display: block;
 }
 
+
+.article__title  {
+  font-size: 48px;
+  margin: 0;
+}
+
+.article__meta {
+  color: silver;
+}
+
+.article__content {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 50px;
+}
+
+.article__perex {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.article__image {
+  display: block;
+  width: 100%;
+}
+
+.clanek img{
+  width: 70%;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.clanek{
+  text-align: center;
+}
+
+
 .footer {
-  background-color: rgb(61, 12, 12);
+  background-color: #B62B6C;
   padding: 30px;
   text-align: center;
   border-radius: 0 0 10px 10px;
@@ -232,22 +300,45 @@ label{
   color: whitesmoke;
 }
 
+
+
 @media screen and (min-width: 1200px) {
   .menu-toggler {
     display: none;
   }
 
-  .body {
-    width: 1200px !important;
+  .header {
+    background-image: url("/images/pozadi.png");
+    background-position: center;
+  }
+  .header h1 {
+    color: rgb(17, 17, 17);
+    font-size: 62px;
+    margin-top: 150px;
+    font-weight:bolder;
+  }
+
+  body {
+    max-width: 1000px !important;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .menu__list {
     display: flex !important;
   }
 
-  .obdelnik1 {
-    text-align: left;
-    line-height: 1.1;
+
+    
+    .obdelnik1 img{
+      width: 200%;
+      margin-top: 30px;
+      margin-right: 40px;
+      border-radius: 20px;
+      text-align: left;
+      line-height: 1.1;
   }
 
   .buttons {
@@ -263,18 +354,24 @@ label{
     border-radius: 10px;
     margin-top: 30px;
   }
+.omne{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 
   .omne img {
-    width: 12%;
-    float: right;
+    width: 30%;
     border-radius: 10px;
-    margin-top: 30px;
+    margin: 30px;
   }
 
   .omne p {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
     margin-top: 40px;
-    margin-left: 10%;
+    margin-left: 5%;
     margin-right: 15px;
   }
 
@@ -307,6 +404,25 @@ label{
     margin: 5px;
     text-align:start;
     margin-bottom: 20px;
+  }
+
+  .clanek {
+    display:grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 50px;
+    margin: 30px;
+  }
+  
+  .clanek img{
+    width: 60%;
+    margin-top: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 2px black;
+  }
+
+  .formular1{
+    margin: 30px;
+    font-size: 22px;
   }
 
 }

@@ -1,23 +1,92 @@
 ---
-layout: mojesablona.njk
+layout: layouts/stranka.njk
 title: NiCode.cz
 itemKontakt: menu__item_highlited
 ---
 
-<div class="omne">
-  <img src="/images/nd2.jpg" alt="Nikola Doležalová" />
-  <!-- obrázek -->
+<!-- Formular -->
 
-  <!-- Sekce o mně -->
-<div class="kdo">
-  <p>
-Nikola Doležalová<br>
-E-mail: <a href="mailto:nikola@nicode.cz">nikola@nicode.cz</a><br>
-Skála 15<br>
-987 65 Městečko nad Řekou
-  </p>
-  <p>
-    IČO:123456
-  </p>
+<div class="formular1">
+  <h2>Poptávkový formulář</h2>
+  <form action="http://formular.itgirls.cz" method="GET">
+    <label for="jmeno">Jméno a příjmení:</label>
+    <input
+      type="text"
+      name="jmeno"
+      id="jmeno"
+      size="20"
+      maxlength="20"
+      placeholder="Josef Novák"
+      autofocus
+      required
+    />
+
+    <label for="email">E-mailová adresa:</label>
+    <input
+      type="email"
+      name="email"
+      id="email"
+      size="20"
+      maxlength="20"
+      placeholder="josef@novak.cz"
+      autofocus
+      required
+    />
+
+    <label for="phone">Telefonní číslo:</label>
+    <input
+      type="text"
+      name="phone"
+      id="phone"
+      size="20"
+      maxlength="20"
+      placeholder="+420777111222"
+      autofocus
+      required
+    />
+
+    <label for="adresa">Text:</label>
+    <textarea
+      name="adresa"
+      id="adresa"
+      cols="30"
+      rows="10"
+      placeholder="Zde napiště svůj požadavek"
+    ></textarea>
+
+    <label for="varianta"
+      ><select name="varianta">
+        <option selected disabled hidden>Vyberte</option>
+        <option value="V1">Varianta 1</option>
+        <option value="V2">Varianta 2</option>
+        <option value="V2">Varianta 3</option>
+        <option value="V2">Varianta 4</option>
+      </select>
+    </label>
+
+    <label for="souhlas">
+      <input type="checkbox" name="souhlas" id="souhlas" value="ano" checked />
+      Souhlasím se zpracováním osobních údajů pro marketingové účely.
+    </label>
+
+    <button type="submit" name="tlacitko" value="Odeslat">Odeslat</button>
+  </form>
 </div>
+
+<hr>
+<!-- Sekce o mně -->
+
+<div class="omne">
+  <img src="/images/nd2.jpg" alt="Nikola Doležalová" /><!-- obrázek -->
+
+  <div class="kdo">
+    <p>
+      <h2>Kontaktní údaje</h2>
+      Nikola Doležalová<br />
+      E-mail: <a href="mailto:nikola@nicode.cz">nikola@nicode.cz</a><br />
+      Skála 15<br />
+      987 65 Městečko nad Řekou<br>
+    </p>
+    <p></p>
+  </div>
 </div>

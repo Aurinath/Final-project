@@ -1,0 +1,19 @@
+---
+layout: layouts/stranka.njk
+title: NiCode.cz
+itemBlog: menu__item_highlited
+---
+
+<h1>Blog</h1>
+{% for prispevek in collections.blog %}
+
+<div class="clanek">
+  <img src="/images/{{prispevek.data.foto}}" alt="{{prispevek.data.alt}}" />
+
+  <div class="clanek__popis">
+    <h2>{{prispevek.data.title}}</h2>
+    <p>{{prispevek.data.perex}}</p>
+    <p><a href="{{ prispevek.url }}">Celý článek</a></p>
+  </div>
+</div>
+{% endfor %}
